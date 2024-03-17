@@ -1,0 +1,219 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0b0c0d;
+    color: #e5e5e5;
+    font-family: 'Monteserrat', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#mainTitle {
+    background-color: #e5e5e5;
+    color: #0b0c0d; 
+    padding: 3px;
+    min-height: 8vh;
+}
+
+#timeContainer {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+#timerContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+#fullContainer {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    flex: 1;
+    min-height: 85vh;
+}
+
+#leftContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    justify-content: space-between;
+}
+
+#rightContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+#timer, #score {
+    background-color: #222326; 
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+#timer {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: center;
+    
+}
+
+#score {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+#punchCombo {
+    background-color: #222326; 
+    border-radius: 25px;
+    padding: 0px 25px 10px 25px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+
+}
+
+#rightContainer {
+    display: flex;
+    flex-direction: column;
+    right: 0%;
+    width: 50%;
+}
+
+
+h2,h1,p {
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 20px;
+}
+
+p {
+    font-size: 30px;
+}
+
+label {
+    font-size: 20px;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+#timerContainer label {
+    float: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+input{
+    display: block;
+}
+
+#displayTime{
+    display: block;
+    font-size: 30px;
+}
+
+#punchNum {
+    height: 30px;
+    text-align: center;
+}
+
+#classificationVid {
+    text-align: center;
+}
+
+input[type=number] {
+    font-size: 15px;
+    text-align: center;
+}
+
+button {
+    background-color: #e5e5e5;
+    color: #222326;
+    padding: 10px;
+    border-radius: 25px;
+    font-family: 'Monteserrat', sans-serif;
+}
+
+
+#confirm {
+    display: none;
+    background-color: #e5e5e5;
+    color: #0b0c0d;
+    position: fixed;
+    width: 300px;
+    height: 400px;
+    left: 40%;
+    top: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 5px 10px 15px 5px rgba(0, 0, 0, 0.5)
+}
+
+#confirmContainer {
+    background-color: #222326;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    height: 100%;
+    color: #e5e5e5;
+}
+
+#confirm button {
+    background-color: #FFFFFF;
+    display: inline-block;
+    border-radius: 12px;
+    padding: 5px;
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+ }
+ 
+#confirm .message {
+    text-align: center;
+    font-size: 30px;
+ }
+
+ #confirm .yes {
+    margin: 0 auto;
+    text-align: center;
+ }
+
+.blur-background {
+    filter: blur(8px);
+}

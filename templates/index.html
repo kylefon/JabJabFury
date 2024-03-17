@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jab Jab Fury</title>
+        <link href="/static/style.css" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="/static/script.js"></script>
+    </head>
+    <body>
+        <main>
+            <div id="mainTitle">
+                <h1>JAB JAB FURY</h1>
+            </div>
+            <section id="fullContainer">
+                <div id="leftContainer">
+                    <div id="timer">
+                        <h2>Timer</h2>
+                        <div id="timerContainer">
+                            <div id="timeContainer">
+                                <form id="Minute">
+                                    <input type="number" id="minuteValue" min="0" max="60" value="0" />
+                                    <label for="minuteValue">Minute</label>
+                                </form>
+                                <form id="Second">
+                                    <input type="number" id="secondValue" min="0" max="60" value="0" />
+                                    <label for="secondValue">Second</label>                        
+                                </form>
+                            </div>
+        
+                            <div id="displayTime">00:00</div>
+        
+                            <div id="buttonContainer">
+                                <button id="start-btn" onclick="startTimer()">Start</button>
+                                <!-- <button id="stop-btn" onclick="stopTimer()">Stop</button> -->
+                                <button id="reset-btn" onclick="resetTimer()">Reset</button>  
+                            </div>
+                        </div>                 
+                    </div>
+                    <div id="score">
+                        <h2 id="scoreText">Score:</h2>
+                        <p id="scoreOutput">0</p>
+                    </div>
+                </div>
+                <div id="rightContainer">
+                    <div id="punchCombo">
+                        <h2>Punch Combo:</h2>
+                        <div id="punchNum"></div>
+                    </div>
+                    <div id="classificationVid">
+                        <h2>Webcam</h2>
+                        <img src="{{ url_for('video_feed') }}" id="webCam" alt="Pose Classification" width="640" height="480">
+                    </div>
+                </div>
+            </section>    
+            <section id="confirm">
+                <div id="confirmContainer">
+                    <div class="message">Score</div>
+                    <div class="finalScore"></div>
+                    <button class="yes">OK</button>
+                </div>
+                
+             </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
